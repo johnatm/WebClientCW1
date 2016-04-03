@@ -1,0 +1,419 @@
+:root{ /*3.c Structural Selector,This is used when needed to select based on document tree.*/
+    font: 20px;
+   background-image: url(Images/background.jpg);
+    background-attachment: fixed; /*background image adjustment*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin : 10px;
+}
+
+#main { 
+    width: 1000px;
+    margin: 0 auto;
+    text-align: justify;   
+}
+#main_body { 
+    width: 800px;
+    margin: 0 auto;
+    margin-right: 2000px;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 2px #666;
+    background-color: rgba(0,0,0 ,0.5);
+    margin-top: 30px;
+    margin-left: 20px;
+    border-style: outset;/* 3.e border style,this is used to put borders*/
+}
+
+#main_body:hover{
+  background-color: #6b6b47; 
+}
+
+#main_body1 { 
+    width: 420px;
+    margin: 0 auto;
+    margin-right: 200px;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 2px #666;
+    background-color: rgba(0,0,0 ,0.5);
+    margin-top: 10px;
+    margin-left: 400px;
+    border-style: outset;
+}
+
+#main_body1:hover{
+    background-color: #6b6b47; 
+}
+
+#main_nav{
+    width: 650px;
+    height : 60px;    
+/*   list-style: none;    */
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 25px;
+    /*color: #000;*/
+    border-radius: 0px;
+    box-shadow: 0 0 15px 10px #000;
+   /* background-color: rgba(228, 228, 228,0.5);*/
+    
+/*3.f, Gradient,Used for transition between colors    */
+ background: radial-gradient(farthest-corner at 90% 55%,#999966,#80007f,#666699,#b3ccff,#602060,#66b2ff,#002266); /* 3.f gradeient*/
+
+    
+}
+
+#main_nav:hover{
+    background-image: url(Images/old1.jpg)
+}
+
+section{
+    clear : left;
+}
+
+h1 { 
+    font-size: 50px;
+    text-align: center;
+    font-family: Intro Inline;
+    color: black;
+}
+
+h1:hover{ /*3.b psuedo element,This is used to style certain parts of an element*/
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    text-shadow: 0px 0 40px #fff;
+    font-size: 60px;
+}
+h2 { 
+    font-size: 50px;
+    text-align: center;
+    font-family: Intro Inline;
+    color: White;
+    opacity: 0.8;
+}
+p{
+    margin: 10px 0;
+    color: white;
+}
+a{
+    color :white;
+    
+}
+
+#main_nav ul {
+/*    align-content: center;*/
+    float : left;
+   -webkit-transition : .5s;/*  3.g transformation*/
+    transition : .5s;
+    margin : 0;
+    
+   
+}
+
+#main_nav li{
+    float : left;
+    position : relative;
+    width : 150px;
+    list-style: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+    font-family: Charlemagne Std;   
+    
+}
+#main_nav li li{
+    text-align: left;
+        color: rgba(0,0,0,0);
+    border-radius: 0px;
+    box-shadow: 0 0 15px 0px #666;
+
+}
+
+#main_nav > ul>li>a, h1 {
+     text-transform: uppercase;
+}
+
+main_nav a {
+    display: block;
+    text-decoration: none;                 
+    color: white;
+     text-align: center;
+    width: 150px;
+}
+
+#main_nav ul ul ul{
+    left : 100%;
+    top: 0;
+}
+
+#main_nav ul ul{
+    position: absolute;
+    left: 0;
+    top : 100%;
+    visibility: hidden;
+    opacity: 0;
+    
+    color: #000;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 0px #666;
+}
+
+#main_nav li:hover, #main_nav li:hover li {
+    background:    rgba(0,0,0,0); ;
+   
+}
+
+#main_nav li li:hover, #main_nav li li:hover li{
+    background:  rgba(0,0,0,0);
+}
+
+#main_nav li li li:hover {
+    background: rgba(0,0,0,0);
+}
+
+#main_nav li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+#twitter {
+    margin-left: 890px;
+    position: absolute;
+    top: 39%;
+    width: 400px;
+    height : 800px;
+}
+
+#image {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.carddiv {
+width:350px; height:450px; position:relative;
+-webkit-transform-style: preserve-3d;
+-webkit-transform-origin: 50% 75px;
+-webkit-transition: all 0.7s ease;
+transform-style: preserve-3d;
+transform-origin: 50% 75px;
+transition: all 0.7s ease;
+}
+.container:hover .carddiv {
+-webkit-transform: rotateX(-45deg);
+transform: rotateX(-45deg);
+}
+.frontofcard, .backofcard {
+width:350px; height:450px; position:absolute; left:0; 
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+}
+.backofcard {
+padding-top:50px;
+-webkit-transform: rotateX(45deg);
+transform: rotateX(45deg);
+}
+
+#main_body2 { 
+    width: 1000px;
+    margin: 0 auto;
+    margin-right: 2000px;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 2px #666;
+    background-color: rgba(0,0,0 ,0.5);
+    margin-top: 30px;
+    margin-left: 160px;
+    border-style: outset; /*3.e border,this is used to put borders*/
+}
+#main_body2:hover{
+    background-image: url(Images/old3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image1 {
+    margin-left: 100px;
+    opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+.image1:hover{
+    -webkit-box-shadow: 0px 0px 15px 15px #fff;
+    opacity: 0.6;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+}
+
+[class^="img"]:hover{ /*3.a attribute selector,This is used to select certain elements with special attributes*/
+   border-radius:50%;
+   box-shadow: 0 10px 6px -6px black;
+    -webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+#main_body3 { 
+    width: 1000px;
+    margin: 0 auto;
+    margin-right: 2000px;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 2px #666;
+    background-color: rgba(0,0,0 ,0.5);
+    margin-top: 30px;
+    margin-left: 160px;
+    border-style: outset;
+}
+#main_body3:hover{
+    background-image: url(Images/old2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gradient{
+  margin-left: 30px;
+  margin-top: 20px;
+  height:100px;
+  width: 1250px;
+  background: radial-gradient(farthest-corner at 60% 55%,#993366,#cc33ff,#993399,#66b2ff,#00b300);
+}
+a[target]{ /* 3.a attribute selector,This is used to select certain elements with special attributes*/
+  background-color: antiquewhite; 
+}
+
+
+.images{
+  position: absolute;
+  margin-left: 250px;
+  top : 248px; 
+  
+}
+
+.images img:hover {
+    border-top-left-radius: 120px; 
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    border-bottom-left-radius: 120px;
+    border-top-right-radius: 120px; 
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px; 
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    
+
+}
+
+#main_body4{
+    position: absolute;
+    width: 450px;
+    margin-right: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 2px #666;
+    background-color: rgba(0,0,0 ,0.5);
+    margin-top: 30px;
+    margin-left: 580px;
+    border-style: outset;      
+}
+
+#main_body5{
+    position: absolute;
+    width: 1000px;
+    margin-right: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 2px #666;
+    background-color: rgba(0,0,0 ,0.5);
+    margin-top: 450px;
+    margin-left: 150px;
+    border-style: outset;      
+}
+
+
+h3 {
+    color:crimson;
+    font-family: Monotype Corsiva;
+    font-size: 35px;
+    text-align: center
+}
+
+h3:hover{
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    text-shadow: 0px 0 30px #fff;
+}
+.labelLetter{
+    color: white;
+}
+
+
+.form{
+   color: black;
+    font-family: sans-serif;
+    font-size: 20;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    padding: 20px;
+	width: 800px;
+    margin-left: 80px;
+    
+}
+
+.form:hover {
+   background-color: rgba(255,255,255,0.3);
+ 
+}
+
+.form fieldset:last-of-type {
+	margin-bottom: 0;
+}
+
+
+
+/*3.a Attribute selectors,This is used to select certain elements with special attributes */
+input[type="text"]{    
+       
+    padding : 10px;
+}
+
+
+
+input:not([type="text"]){ /*3.d negation pseudo class,. this takes a selector list as an argument*/
+    padding : 10px;
+}
+
+input[type="text"]:hover{
+    border-radius: 10px;
+}
+
+input:not([type="text"]):hover{
+     border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+}
+
+#main_body6 { 
+    width: 1000px;
+    margin: 0 auto;
+    margin-right: 2000px;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 2px #666;
+    background-color: rgba(0,0,0 ,0.5);
+    margin-top: 40px;
+    margin-left: 160px;
+    border-style: outset; /*3.e border,this is used to put borders*/
+}
+
+
+#main_body6:hover{
+    background-image: url(Images/old3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
